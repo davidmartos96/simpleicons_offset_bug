@@ -1,16 +1,20 @@
 # icons_bug
 
-A new Flutter project.
+## Description
 
-## Getting Started
+The demo demonstrates the offset issue on simpleicons ttf vs another ttf font in Flutter, material icons which doesn't have that problem.
 
-This project is a starting point for a Flutter application.
+Source code is under the `lib` folder.
 
-A few resources to get you started if this is your first Flutter project:
+## Setup
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Install [Flutter](https://flutter.dev/docs/get-started/install) It can be installed via zip and add to PATH.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Run the project with `flutter run`. It will be more confortable to run it on a desktop platform. You can do `flutter devices`, and then you can use `flutter run -d <device_id>` to run it on a specific device. Example: `flutter run -d linux`.
+
+3. The `fonts` folder contains the v10 ttf font from the Github releases.
+
+4. To test the app with an updated font, unfortunately the app needs to be restarted from scratch. Hot restart/reload functionality from Flutter won't work for this case, as it is an external asset.
+
+5. The `lib/icons.dart` file contains a sample icon, 1Password, which is round, helping see the issue.
+
